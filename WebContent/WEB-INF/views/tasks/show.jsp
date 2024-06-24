@@ -7,7 +7,7 @@
             <c:when test="${task != null}">
                 <h2>id : ${task.id} の詳細ページ</h2>
 
-                <p>メッセージ：<c:out value="${task.content}" /></p>
+                <p>タスクの内容：<c:out value="${task.content}" /></p>
                 <p>作成日時：<fmt:formatDate value="${task.created_at}" pattern="yyyy-MM-dd HH:mm:ss" /></p>
                 <p>更新日時：<fmt:formatDate value="${task.updated_at}" pattern="yyyy-MM-dd HH:mm:ss" /></p>
 
